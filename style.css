@@ -1,0 +1,317 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+}
+header{
+    min-width: 100vw;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: 3px rgb(1, 179, 255) solid;
+    animation-name: ca;
+    animation-duration: 2s;
+}
+@keyframes ca {
+    0%{
+        max-width: 0px;
+        min-width: 0px;
+    }
+    100%{
+        max-width: auto;
+        min-width: 100vw;
+    }
+}
+nav{
+    display: flex;
+    gap: 10px;
+    color: white;
+    box-sizing: border-box;
+    max-height: 50px;
+    align-items: center;
+}
+nav span:hover{
+    color: rgb(124, 127, 255);
+    margin-bottom: 10px;
+}
+#corpo{
+    width: 100vw;
+    height: calc(100vh - 50px);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    overflow-y: scroll;
+    animation-name: copo;
+    animation-duration: 2s;
+}
+@keyframes copo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#Inicio{
+    animation-name: ini;
+    animation-duration: 2s;
+}
+@keyframes ini {
+    0%{
+        position: absolute;
+        margin-left: 200vw;
+    }
+    100%{
+        margin: 0px;
+    }
+}
+
+
+.parte{
+    min-width: 80vw;
+    max-width: 80vw;
+    max-height: 80vh;
+    min-height: 80vh;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg,rgba(4, 41, 88, 0.5),rgba(150, 150, 150, 0),rgba(150, 150, 150, 0),rgba(4, 41, 88, 0.5));
+    min-height: calc(80vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    border-radius: 2em;
+}
+
+h2{
+    color: rgb(1, 179, 255);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#apresentacao{
+    min-width: 400px;
+    min-height: 300px;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 50px;
+    background: linear-gradient(-45deg,rgba(62, 63, 95, 0.5),rgba(150, 150, 150, 0),rgba(150, 150, 150, 0),rgba(62, 63, 95, 0.5));
+    border-style: solid;
+    border-color: rgb(1, 179, 255);
+    box-shadow: 0px 0px 20px  rgb(1, 179, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    
+}
+#apresentacao:hover{
+    box-shadow: 0px 0px 100px  rgb(1, 179, 255);
+    background: linear-gradient(-45deg, rgb(1, 179, 255),rgba(1, 179, 255,0.5));
+    color: black;
+    animation-name: apre;
+    animation-duration: 0.15s;
+    animation-delay: 0.5ms;
+}
+@keyframes apre {
+    100%{
+      background: linear-gradient(-45deg, rgb(1, 179, 255),rgba(1, 179, 255,0.5));  
+    }
+    50%{
+        background: linear-gradient(-45deg,rgba(1, 179, 255),rgb(1, 179, 255, 0.5),rgb(1, 179, 255, 0.5),rgba(1, 179, 255));
+    }
+    60%{
+        background: linear-gradient(-45deg,rgba(1, 179, 255),rgba(1, 179, 255),rgb(1, 179, 255, 0.5),rgb(1, 179, 255, 0.5),);
+    }
+    0%{
+        background: linear-gradient(-45deg, rgb(1, 179, 255, 0.5),rgba(1, 179, 255));
+    }
+}
+#apresentacao span{
+    color:rgb(1, 179, 255); 
+    font-size: 20px;
+    font-weight: 900;
+}
+.ya{
+    background: radial-gradient(rgba(1, 179, 255, 0.25), rgba(1, 179, 255, 0.5), rgba(1, 179, 255, 0.75));
+    width: 8px;
+    height: 8px;
+    border-radius: 5em;
+    position: absolute;
+    z-index: -1;
+    animation-name: yo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(1, 179, 255, 0.5);
+}
+@keyframes yo {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 20;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Projetos{
+    animation-name: h3;
+    animation-duration: 8s;
+    overflow-x: scroll;
+    margin-top: 10px;
+    gap: 30px;
+}
+#Projetos div{
+    box-shadow: 0px 0px 20px  rgb(1, 179, 255);
+    min-height: 80%;
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 1em;
+    background: linear-gradient(-45deg,rgba(62, 63, 95, 0.5),rgba(150, 150, 150, 0),rgba(62, 63, 95, 0.5));
+    animation-name: as;
+    animation-duration: 1s;
+}
+@keyframes as{
+    0%{
+        box-shadow: 0px 0px 0px  rgb(1, 179, 255);
+    }
+    100%{
+        box-shadow: 0px 0px 20px  rgb(1, 179, 255);
+    }
+}
+#Projetos div:hover{
+    box-shadow: 10px 10px 20px  rgb(1, 179, 255);
+    animation-name: len;
+    animation-duration: 1s;
+}
+@keyframes len{
+    0%{
+        box-shadow: 0px 0px 20px  rgb(1, 179, 255);
+    }
+    100%{
+        box-shadow: 10px 10px 20px  rgb(1, 179, 255);
+    }
+}
+#Projetos div img{
+    width: 80%;
+    height: 200px;
+    background-color: aliceblue;
+}
+#Projetos div p{
+    margin-top: 10px;
+    color: white;
+    max-width: 200px;
+    max-height: 250px;
+    min-width: 200px;
+    min-height: 250px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3{
+    color: rgba(1, 179, 255, 1);
+    width: 75%;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 5px;
+    animation-name: h3;
+    animation-duration: 5s;
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+@keyframes h3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#ferra{
+    
+    animation-name: h3;
+    animation-duration: 8s;
+}
+#ferra div div{
+    min-width: 300px;
+    background: linear-gradient(90deg,rgba(62, 63, 95, 0.5),rgba(150, 150, 150, 0),rgba(150, 150, 150, 0),rgba(62, 63, 95, 0.5));
+    margin: 5px;
+    padding: 0px 10px;
+}
+#ferra div div:hover{
+    box-shadow: 10px 10px 20px  rgb(1, 179, 255);
+    animation-name: len;
+    animation-duration: 1s;
+}
+.ima{
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+}
+#Inicio div a{
+    padding: 2px;
+    background-color: rgb(1, 179, 255);
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+#Inicio div a:hover{
+    background-color: white;
+    color: rgb(1, 179, 255);
+}

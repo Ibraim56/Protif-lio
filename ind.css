@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    display: none;
+}
+#par{
+    width: auto;
+    padding: 10px;
+    height: 10px;
+    background-color: white;
+}
+body{
+    background-color: yellow;
+}
+@media (max-width: 600px) {
+   p{
+    display: block;
+    background-color: red;
+   }
+   #par{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    right: -1000px;
+   }
+}
